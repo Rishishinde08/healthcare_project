@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" type="image/png" href="./assets/logo copy.png">
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="icon" type="image/png" href="./assets/logo copy.png">
 
   <link rel="stylesheet" href="style.css" />
   <title>ArogyaSathi | Hackathon Project</title>
@@ -569,6 +569,26 @@ We are here for your health — always."</p>
     <p>&hearts; Devloped by SGI Hunters Team </p>
   </div>
 </footer>
+
+
+
+<!-- chat box  -->
+
+<div class="chatbot-icon" onclick="toggleChatbox()">
+  <img src="./assets/aichatbot.png" alt="Chatbot" />
+</div>
+
+<div class="chatbox-container" id="chatbox">
+  <div class="chat-header">🤖 ArogyaBot</div>
+  <div class="chat-messages" id="chat-messages"></div>
+  <input
+    type="text"
+    id="user-input"
+    placeholder="Type your message..."
+    onkeypress="handleKeyPress(event)"
+  />
+</div>
+
 
 
 
