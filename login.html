@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GenHealth Login</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="image-box">
+      <!-- You can add image here if needed -->
+    </div>
+    <div class="login-box">
+      <div class="logo-bar">
+        <img src="./assets/logo copy.png" alt="logo" class="logo" />
+        <span class="brand-name">AROGYA SATHI</span>
+      </div>
+      <div class="form-section">
+        <h2>Sign in</h2>
+        <p>Enter your account details to enter our platform.</p>
+
+        <!-- Google sign-in -->
+        <div class="social-buttons">
+          <button class="google" id="googleLoginBtn">Sign in with Google</button>
+        </div>
+
+        <div class="divider">OR</div>
+
+        <!-- Message box for error/success -->
+        <div id="messageBox" style="color: red; margin-bottom: 10px;"></div>
+
+        <!-- Login form -->
+        <form id="loginForm">
+          <input type="email" id="email" placeholder="Email" required />
+          <input type="password" id="password" placeholder="Password" required />
+          <div class="forgot-link">
+            <a href="#">Forgot password?</a>
+          </div>
+          <button type="submit" class="login-btn">Login</button>
+          <p class="register">Don't have an account? <a href="#">Create an account</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+
+  <!-- Your script -->
+  <script src="script.js"></script>
+</body>
+</html>

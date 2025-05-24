@@ -127,3 +127,48 @@ function outsideClickListener(event) {
     document.removeEventListener("click", outsideClickListener);
   }
 }
+
+
+// log in page 
+
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyAYl0wqZgjFhHHdM17ZQNwjThffSKZCli8",
+  authDomain: "arogya-hack-proj.firebaseapp.com",
+  projectId: "arogya-hack-proj",
+  storageBucket: "arogya-hack-proj.firebasestorage.app",
+  messagingSenderId: "799303342785",
+  appId: "1:799303342785:web:7ffa74084301a0baa11240",
+  measurementId: "G-8VJ24V0LJ8"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+
+
+document.getElementById('loginForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+
+  auth.signInWithEmailAndPassword(email, password)
+    .then((userCredential) => {
+      alert("Login successful!");
+      // Redirect or show dashboard
+      // window.location.href = "dashboard.html"; // agar dashboard bana ho
+    })
+    .catch((error) => {
+      alert("Login failed: " + error.message);
+    });
+});
