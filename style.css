@@ -257,6 +257,8 @@ cursor: pointer;
 .second-page{
   /* background-color: rebeccapurple; */
   width: 100%;
+  max-width: 1000px;
+  max-width: 50vh;
   height: 50vh;
   display: flex;
   justify-content: space-between;
@@ -278,6 +280,7 @@ cursor: pointer;
   background-color: rgb(192, 192, 218);
   height: 150px;
   width: 600px;
+max-width: 600px;
   overflow: hidden;
   margin: 20px;
   border-radius: 12px;
@@ -569,22 +572,22 @@ cursor: pointer;
 
 .slide2 {
   background-image: url('https://poonahospital.org/wp-content/uploads/2022/09/New-banner444-1920x600.jpg');
-  animation-delay: 5s;
+  animation-delay: 3s;
 }
 
 .slide3 {
   background-image: url('https://poonahospital.org/wp-content/uploads/2022/10/New-banner6-1920x600.jpg');
-  animation-delay: 10s;
+  animation-delay: 6s;
 }
 
 .slide4 {
   background-image: url('https://poonahospital.org/wp-content/uploads/2025/01/40-card-1920x600.jpeg');
-  animation-delay: 15s;
+  animation-delay: 9s;
 }
 
 .slide5 {
   background-image: url('https://poonahospital.org/wp-content/uploads/2024/09/Robotic-Assisted-Knee-Replacement-Desktop.jpg');
-  animation-delay: 20s;
+  animation-delay: 12s;
 }
 
 @keyframes fade {
@@ -693,7 +696,7 @@ cursor: pointer;
   font-size: 16px;
 }
 
-/* Example background images or colors */
+
 .find-doctor {
   /* opacity: .8; */
   background: url('https://images.unsplash.com/photo-1551601651-2a8555f1a136?q=80&w=2047&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover; 
@@ -996,3 +999,7 @@ align-items: center;
   padding: 8px 0;
   font-size: 16px;
 }
+
+
+
+
