@@ -84,4 +84,46 @@ function getReplyFromIntent(intent) {
     default:
       return "Sorry, I didn't understand that.";
   }
+
+
+}
+
+
+
+// toggle emergency button 
+
+ function toggleEmergencyPanel(event) {
+  const panel = document.getElementById("emergency-panel");
+  const tab = document.getElementById("emergency-tab");
+
+  if (panel.classList.contains("active")) {
+    
+    panel.classList.remove("active");
+    tab.style.display = "flex";
+
+   
+    document.removeEventListener("click", outsideClickListener);
+  } else {
+   
+    panel.classList.add("active");
+    tab.style.display = "none";
+
+   
+    setTimeout(() => {
+      document.addEventListener("click", outsideClickListener);
+    }, 0);
+  }
+
+  event.stopPropagation(); 
+}
+
+function outsideClickListener(event) {
+  const panel = document.getElementById("emergency-panel");
+  const tab = document.getElementById("emergency-tab");
+
+  if (!panel.contains(event.target) && !tab.contains(event.target)) {
+    panel.classList.remove("active");
+    tab.style.display = "flex";
+    document.removeEventListener("click", outsideClickListener);
+  }
 }

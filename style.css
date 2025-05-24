@@ -938,3 +938,61 @@ align-items: center;
   outline: none;
   width: 100%;
 }
+
+
+
+
+
+/* Emergency Tab (Icon) */
+.emergency-tab {
+  position: fixed;
+  top: 200px;
+  left: 0;
+  width: 40px;
+  height: 100px;
+  background-color: red;
+  color: white;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Emergency Panel */
+.emergency-panel {
+  position: fixed;
+  top: 50px; /* panel just below top nav */
+  left: -220px;
+  width: 200px;
+  background-color: #fff;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+  padding: 20px;
+  transition: left 0.4s ease;
+  z-index: 1001;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.emergency-panel.active {
+  left: 0;
+}
+
+.emergency-panel h4 {
+  margin-top: 0;
+  color: red;
+}
+
+.emergency-panel ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.emergency-panel ul li {
+  padding: 8px 0;
+  font-size: 16px;
+}
