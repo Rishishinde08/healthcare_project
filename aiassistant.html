@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Voice Assistant</title>
+    <link rel="stylesheet" href="aiasis.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Healthcare Voice Assistant</h1>
+            <p>Ask me about symptoms, medications, or general health advice</p>
+        </div>
+        
+        <div class="disclaimer">
+            <strong>Note:</strong> This assistant provides general health information only. It is not a substitute for professional medical advice. Always consult a healthcare provider for personal medical concerns.
+        </div>
+        
+        <div class="chat-container">
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot-message">
+                    Hello! I'm your healthcare assistant. How can I help you today? You can ask me about symptoms, medications, or general health advice.
+                </div>
+                
+                <div class="message bot-message medical-info">
+                    <strong>Example questions:</strong><br>
+                    - What are the symptoms of diabetes?<br>
+                    - How can I lower my blood pressure?<br>
+                    - What's the difference between a cold and flu?<br>
+                    - Tell me about side effects of ibuprofen
+                </div>
+            </div>
+            
+            <div class="input-area">
+                <input type="text" id="user-input" placeholder="Type your health question here...">
+                <button class="voice-btn" id="voice-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                        <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                        <line x1="12" y1="19" x2="12" y2="23"></line>
+                        <line x1="8" y1="23" x2="16" y2="23"></line>
+                    </svg>
+                </button>
+                <button class="send-btn" id="send-btn">Send</button>
+            </div>
+        </div>
+        
+        <a href="tel:108" class="emergency-btn">Emergency Medical Help</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
