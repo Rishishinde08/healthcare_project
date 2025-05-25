@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Hospitals in India</title>
+    <link rel="stylesheet" href="hospital.css">
+</head>
+<body>
+
+
+
+    <header>
+        <nav class="navbar">
+          <div class="left">
+            <a href="index.html">
+              <img src="/assets/logo copy.png" alt="logo" width="80px">
+            </a>
+          </div>
+    
+          <div class="hamburger" onclick="toggleMenu()">
+            &#9776;
+          </div>
+    
+        
+          <div class="center" id="navLinks">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./hospital.html">Hospital</a></li>
+          <li><a href="./scheme.html">Schemes</a></li>
+          <li><a href="./blog.html">Blogs</a></li>
+          <li><a href="./info.html">Info</a></li>
+          <li><a href="./dashboard.html">Dashboard</a></li>
+          <!-- <li><a href="./emergency.html">Emergency  </a></li> -->
+        </ul>
+      </div>
+    
+          <div class="right" id="navButtons">
+          <a href="login.html">  <button>Log In</button></a>
+            <a href="/emergency.html"><button>Emergency Alert</button></a>
+          </div>
+        </nav>
+      </header>
+    
+    
+
+
+    <header>
+        <div class="container">
+            <h1>Government Hospitals in India</h1>
+            <p>List of top government hospitals across specialties</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="search-container">
+            <input type="text"  id="hospitalSearch" placeholder="Search hospitals by name, location or specialty...">
+        </div>
+        
+        <div class="tabs">
+            <button class="tab-btn active" onclick="openTab('all')">All Hospitals</button>
+            <button class="tab-btn" onclick="openTab('cardio')">Cardiology</button>
+            <button class="tab-btn" onclick="openTab('neuro')">Neurology</button>
+            <button class="tab-btn" onclick="openTab('ortho')">Orthopedics</button>
+            <button class="tab-btn" onclick="openTab('pedia')">Pediatrics</button>
+        </div>
+        
+        <!-- All Hospitals -->
+        <div id="all" class="tab-content active"></div>
+        
+        <!-- Specialty tabs will be populated by JavaScript -->
+        <div id="cardio" class="tab-content"></div>
+        <div id="neuro" class="tab-content"></div>
+        <div id="ortho" class="tab-content"></div>
+        <div id="pedia" class="tab-content"></div>
+    </div>
+
+
+
+      <!-- footer  -->
+
+
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-about">
+            <!-- <h3>Arogyasathi</h3> -->
+            <a href="index.html">
+              <img src="/assets/logo copy.png" alt="logo" width="200px">
+            </a>
+  
+            <p>Empowering lives through quality healthcare. We are here for your health — always.</p>
+          </div>
+  
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#services">Services</a></li>
+              <li><a href="/video.html">Videos</a></li>
+              <li><a href="/info.html">Why Arogyasathi</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p>Email: support@arogyasathiXXXX.in</p>
+            <p>Phone: +91-9834732508</p>
+            <p>Address: Mumbai, Maharashtra, India</p>
+          </div>
+        </div>
+  
+        <div class="footer-bottom">
+          <p>&copy; 2025 Arogyasathi. All rights reserved.</p>
+          <p>&hearts; Devloped by SGI Hunters Team </p>
+        </div>
+      </footer>
+  
+  
+
+
+
+    <script src="hospital.js"></script>
+</body>
+</html>

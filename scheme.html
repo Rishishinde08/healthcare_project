@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Government Health Schemes in India</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+ <link rel="stylesheet" href="scheme.css">
+</head>
+<body>
+
+
+  <header>
+    <nav class="navbar">
+      <div class="left">
+        <a href="index.html">
+          <img src="/assets/logo copy.png" alt="logo" width="80px">
+        </a>
+      </div>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        &#9776;
+      </div>
+
+ 
+          <div class="center" id="navLinks">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./hospital.html">Hospital</a></li>
+          <li><a href="./scheme.html">Schemes</a></li>
+          <li><a href="./blog.html">Blogs</a></li>
+          <li><a href="./info.html">Info</a></li>
+          <li><a href="./dashboard.html">Dashboard</a></li>
+          <!-- <li><a href="./emergency.html">Emergency  </a></li> -->
+        </ul>
+      </div>
+
+      <div class="right" id="navButtons">
+      <a href="login.html">  <button>Log In</button></a>
+        <a href="./emergency.html"><button>Emergency Alert</button></a>
+        <!-- <a href="/emergencyalert/src/emergency.html"><button>Emergency Alert</button></a> -->
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="big-header">
+    🩺 All Government Health Schemes in India
+  </div>
+
+  <div class="container">
+    <p class="intro-text">
+      The Government of India offers various health schemes to ensure better access to healthcare for all citizens.
+      These programs cover financial assistance, maternal care, insurance, immunization, and digital health.
+      Explore the schemes below and apply for one that suits your needs.
+    </p>
+  </div>
+
+
+  <section class="health-benefits">
+    <div class="benefits-container">
+        <div class="section-header">
+            <h2 class="section-title">Key Benefits of Health Schemes</h2>
+            <p class="section-subtitle">How comprehensive healthcare coverage transforms lives and communities</p>
+        </div>
+        
+        <div class="benefits-content">
+            <p><span class="highlight">Financial security and risk protection</span> stand as primary advantages of health schemes, shielding families from catastrophic medical expenses that could otherwise lead to debt or poverty. By pooling resources across large populations, these programs make quality healthcare accessible to all socioeconomic groups, effectively reducing health disparities in communities.</p>
+
+            <p>The emphasis on <span class="highlight">preventive care and early intervention</span> leads to better health outcomes and reduced long-term costs. Regular health screenings, vaccinations, and wellness programs help detect potential health issues before they become serious, while chronic disease management programs provide ongoing support for conditions like diabetes and hypertension.</p>
+
+            <p>Health schemes demonstrate particular value in <span class="highlight">maternal and child health services</span>, covering prenatal care, safe deliveries, and pediatric checkups that significantly reduce infant and maternal mortality rates. Mental health services, often overlooked in many healthcare systems, gain proper attention through coverage for counseling and psychiatric treatments.</p>
+
+            <p>From an economic perspective, these programs contribute to <span class="highlight">workforce productivity and national development</span> by maintaining a healthier population. The standardization of care across providers ensures minimum quality benchmarks, while emergency coverage guarantees access to urgent treatments without financial barriers or delays.</p>
+
+            <p>Additional benefits include support for elderly care, disability services, and rural healthcare access through innovative solutions like telemedicine. By integrating <span class="highlight">health education and awareness programs</span>, these schemes empower individuals to make informed decisions about their wellbeing, creating a culture of health consciousness in society.</p>
+        </div>
+    </div>
+</section>
+
+  <!-- Application Form -->
+  <div class="scheme-form">
+    <form action="https://formsubmit.co/aniketgosavi471@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="box">
+      <input type="hidden" name="_subject" value="New Health Scheme Application">
+
+      <div class="row g-3">
+        <div class="col-md-6">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="name" name="Full Name" required>
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="email" class="form-control" id="email" name="Email" required>
+        </div>
+        <div class="col-md-6">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input type="tel" class="form-control" id="phone" name="Phone" required>
+        </div>
+        <div class="col-md-6">
+          <label for="age" class="form-label">Age</label>
+          <input type="number" class="form-control" id="age" name="Age" required>
+        </div>
+        <div class="col-md-6">
+          <label for="gender" class="form-label">Gender</label>
+          <select class="form-select" id="gender" name="Gender" required>
+            <option selected disabled value="">Select Gender</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="col-md-6">
+          <label for="location" class="form-label">Location</label>
+          <input type="text" class="form-control" id="location" name="Location" required>
+        </div>
+        <div class="col-md-12">
+          <label for="scheme" class="form-label">Select Scheme</label>
+          <select id="scheme" class="form-select" name="Selected Scheme" required>
+            <option selected disabled value="">Choose a scheme</option>
+            <option>Ayushman Bharat - PM-JAY</option>
+            <option>Janani Suraksha Yojana</option>
+            <option>National Health Mission</option>
+            <option>Rashtriya Swasthya Bima Yojana (RSBY)</option>
+            <option>Mission Indradhanush</option>
+            <option>PM Atmanirbhar Swasth Bharat</option>
+            <option>eSanjeevani</option>
+            <option>National Digital Health Mission (NDHM)</option>
+            <option>LaQshya Programme</option>
+          </select>
+        </div>
+        <div class="col-12 text-end">
+          <button type="submit" class="btn btn-success">Submit Application</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!-- Scheme Cards Section -->
+  <div class="container pb-5">
+    <div class="row g-4">
+      <!-- Scheme Cards -->
+      <div class="col-12 col-md-6 col-lg-4 d-flex">
+        <div class="scheme-card">
+          <img src="/assets/PM Atmanirbhar Swasth Bharat.jpg" alt="PM-JAY">
+          <h5>Ayushman Bharat - PM-JAY</h5>
+          <p>₹5 lakh coverage for underprivileged families. Free hospitalization in empaneled hospitals.</p>
+          <a href="https://pmjay.gov.in" target="_blank" class="btn btn-primary btn-sm">Learn More</a>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 d-flex">
+        <div class="scheme-card">
+          <img src="/assets/Janani Suraksha Yojana (JSY).jpg" alt="JSY">
+          <h5>Janani Suraksha Yojana (JSY)</h5>
+          <p>Provides financial assistance to pregnant women for institutional delivery.</p>
+          <a href="https://nhm.gov.in/index1.php?lang=1&level=3&sublinkid=841&lid=309" target="_blank" class="btn btn-primary btn-sm">Learn More</a>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 d-flex">
+        <div class="scheme-card">
+          <img src="/assets/National Health Mission (NHM).jpg" alt="NHM">
+          <h5>National Health Mission (NHM)</h5>
+          <p>Strengthening public health services in rural and urban areas for all age groups.</p>
+          <a href="https://nhm.gov.in" target="_blank" class="btn btn-primary btn-sm">Learn More</a>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 d-flex">
+        <div class="scheme-card">
+          <img src="/assets/Rashtriya Swasthya Bima Yojana (RSBY).png" alt="RSBY">
+          <h5>Rashtriya Swasthya Bima Yojana (RSBY)</h5>
+          <p>Health insurance coverage for families below the poverty line.</p>
+          <a href="https://www.rsby.gov.in" target="_blank" class="btn btn-primary btn-sm">Learn More</a>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 d-flex">
+        <div class="scheme-card">
+          <img src="/assets/Mission Indradhanush.jpg" alt="Mission Indradhanush">
+          <h5>Mission Indradhanush</h5>
+          <p>Vaccination program for children and pregnant women across India.</p>
+          <a href="https://nhm.gov.in/index1.php?lang=1&level=2&sublinkid=1171&lid=583" target="_blank" class="btn btn-primary btn-sm">Learn More</a>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 d-flex">
+        <div class="scheme-card">
+          <img src="/assets/PM Atmanirbhar Swasth Bharat.jpg" alt="PM Atmanirbhar Swasth Bharat">
+          <h5>PM Atmanirbhar Swasth Bharat</h5>
+          <p>Strengthening health infrastructure and public health labs across India.</p>
+          <a href="https://pib.gov.in/PressReleasePage.aspx?PRID=1700602" target="_blank" class="btn btn-primary btn-sm">Learn More</a>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 d-flex">
+        <div class="scheme-card">
+          <img src="/assets/eSanjeevani.png" alt="eSanjeevani">
+          <h5>eSanjeevani</h5>
+          <p>Telemedicine service for patients and doctors through online consultation.</p>
+          <a href="https://esanjeevani.in" target="_blank" class="btn btn-primary btn-sm">Learn More</a>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 d-flex">
+        <div class="scheme-card">
+          <img src="/assets/National Digital Health Mission (NDHM).jpg" alt="NDHM">
+          <h5>National Digital Health Mission (NDHM)</h5>
+          <p>Creating digital health records and digital IDs for citizens.</p>
+          <a href="https://ndhm.gov.in" target="_blank" class="btn btn-primary btn-sm">Learn More</a>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 d-flex">
+        <div class="scheme-card">
+          <img src="/assets/LaQshya Programme.jpg" alt="LaQshya">
+          <h5>LaQshya Programme</h5>
+          <p>Improving quality of care in labor rooms and maternity services in public hospitals.</p>
+          <a href="https://nhm.gov.in/New_Updates_2018/NHM_Components/RMNCH_MH_Guidelines/LaQshya-Guidelines.pdf" target="_blank" class="btn btn-primary btn-sm">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+ <!-- footer  -->
+
+
+
+ <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <!-- <h3>Arogyasathi</h3> -->
+      <a href="index.html">
+        <img src="/assets/logo copy.png" alt="logo" width="200px">
+      </a>
+
+      <p>Empowering lives through quality healthcare. We are here for your health — always.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="/video.html">Videos</a></li>
+        <li><a href="/info.html">Why Arogyasathi</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p>Email: support@arogyasathiXXXX.in</p>
+      <p>Phone: +91-9834732508</p>
+      <p>Address: Mumbai, Maharashtra, India</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Arogyasathi. All rights reserved.</p>
+    <p>&hearts; Devloped by SGI Hunters Team </p>
+  </div>
+</footer>
+
+
+
+
+</body>
+</html>

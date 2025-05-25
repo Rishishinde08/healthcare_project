@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vedio</title>
+    <link rel="stylesheet" href="video.css">
+</head>
+<body>
+ 
+<header>
+    <nav class="navbar">
+      <div class="left">
+        <a href="index.html">
+          <img src="/assets/logo copy.png" alt="logo" width="80px">
+        </a>
+      </div>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        &#9776;
+      </div>
+
+      <div class="center" id="navLinks">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="/hospital/src/hospital.html">Hospital</a></li>
+          <li><a href="/scheme/src/scheme.html">Schemes</a></li>
+          <li><a href="./blogs.html">Blogs</a></li>
+          <li><a href="/info/src/info.html">Info</a></li>
+          <li><a href="/dashboard/src/dashboard.html">Dashboard</a></li>
+          <li><a href="/helthreminder/src/reminder.html">health reminder</a></li>
+        </ul>
+      </div>
+
+      <div class="right" id="navButtons">
+      <a href="login.html">  <button>Log In</button></a>
+        <a href="/emergency.html"><button>Emergency Alert</button></a>
+      </div>
+    </nav>
+  </header>
+
+
+
+<!-- Video Gallery Section -->
+<section class="video-section">
+    <div class="container">
+      <h2 class="section-title">Health Education Videos</h2>
+      <p class="section-subtitle">Learn from our medical experts</p>
+      
+      <!-- Video Categories -->
+      <div class="video-categories">
+        <button class="category-btn active" data-category="all">All Videos</button>
+        <button class="category-btn" data-category="prevention">Prevention</button>
+        <button class="category-btn" data-category="treatment">Treatment</button>
+        <button class="category-btn" data-category="wellness">Wellness</button>
+        <button class="category-btn" data-category="pediatrics">Pediatrics</button>
+      </div>
+      
+      <!-- Video Grid -->
+      <div class="video-grid">
+        <!-- Video 1 -->
+        <div class="video-card" data-category="prevention">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/Dt2PNDT5BMA?rel=0&controls=1" 
+                    title="Preventive Healthcare" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-info">
+            <h3>Preventive Healthcare Tips</h3>
+            <p>Learn essential preventive measures to maintain good health</p>
+            <span class="video-duration">5:32</span>
+          </div>
+        </div>
+        
+        <!-- Video 2 -->
+        <div class="video-card" data-category="treatment">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/nAsNFnsqqag?rel=0&controls=1" 
+                    title="Chronic Disease Management" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-info">
+            <h3>Managing Chronic Diseases</h3>
+            <p>Expert advice on living with chronic conditions</p>
+            <span class="video-duration">7:15</span>
+          </div>
+        </div>
+        
+        <!-- Video 3 -->
+        <div class="video-card" data-category="wellness">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/NQcYZplTXnQ?rel=0&controls=1" 
+                    title="Mental Wellness" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-info">
+            <h3>Mental Wellness Strategies</h3>
+            <p>Techniques for maintaining mental health</p>
+            <span class="video-duration">6:48</span>
+          </div>
+        </div>
+        
+        <!-- Video 4 -->
+        <div class="video-card" data-category="pediatrics">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/dhpCdqOtuj0?rel=0&controls=1" 
+                    title="Child Healthcare" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-info">
+            <h3>Child Healthcare Basics</h3>
+            <p>Essential healthcare tips for your children</p>
+            <span class="video-duration">8:22</span>
+          </div>
+        </div>
+        
+        <!-- Video 5 -->
+        <div class="video-card" data-category="prevention">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/c06dTj0v0sM?rel=0&controls=1" 
+                    title="Nutrition Guide" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-info">
+            <h3>Nutrition for Healthy Living</h3>
+            <p>Balanced diet recommendations from our nutritionists</p>
+            <span class="video-duration">9:05</span>
+          </div>
+        </div>
+        
+        <!-- Video 6 -->
+        <div class="video-card" data-category="treatment">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/ooqJCdq0ucs?rel=0&controls=1" 
+                    title="Physical Therapy" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-info">
+            <h3>Home Physical Therapy Exercises</h3>
+            <p>Simple exercises you can do at home</p>
+            <span class="video-duration">10:15</span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Load More Button -->
+      <div class="load-more">
+        <button class="load-more-btn">Load More Videos</button>
+      </div>
+    </div>
+</section>
+      
+      
+      
+      <!-- footer  -->
+
+
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-about">
+            <!-- <h3>Arogyasathi</h3> -->
+            <a href="index.html">
+              <img src="/assets/logo copy.png" alt="logo" width="200px">
+            </a>
+  
+            <p>Empowering lives through quality healthcare. We are here for your health — always.</p>
+          </div>
+  
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Videos</a></li>
+              <li><a href="/info.html">Why Arogyasathi</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p>Email: support@arogyasathiXXXX.in</p>
+            <p>Phone: +91-9834732508</p>
+            <p>Address: Mumbai, Maharashtra, India</p>
+          </div>
+        </div>
+  
+        <div class="footer-bottom">
+          <p>&copy; 2025 Arogyasathi. All rights reserved.</p>
+          <p>&hearts; Devloped by SGI Hunters Team </p>
+        </div>
+      </footer>
+  
+  
+  
+      <script src="video.js"></script>
+   
+    </body>
+    </html>

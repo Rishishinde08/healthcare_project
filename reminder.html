@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Reminder</title>
+    <link rel="stylesheet" href="reminder.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="left">
+        <a href="index.html">
+          <img src="/assets/logo copy.png" alt="logo" width="80px">
+        </a>
+      </div>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        &#9776;
+      </div>
+
+          <div class="center" id="navLinks">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./hospital.html">Hospital</a></li>
+          <li><a href="./scheme.html">Schemes</a></li>
+          <li><a href="./blog.html">Blogs</a></li>
+          <li><a href="./info.html">Info</a></li>
+          <li><a href="./dashboard.html">Dashboard</a></li>
+          <!-- <li><a href="./emergency.html">Emergency  </a></li> -->
+        </ul>
+      </div>
+
+      <div class="right" id="navButtons">
+      <a href="login.html">  <button>Log In</button></a>
+        <a href="./emergency.html"><button>Emergency Alert</button></a>
+      </div>
+    </nav>
+  </header>
+
+
+
+    <header>
+        <div class="container_reminder">
+            <h1>Healthcare Reminder System</h1>
+            <p class="subtitle">5-minute guided reminders for your health needs</p>
+        </div>
+    </header>
+    <div class="container_reminder">
+        <button id="addReminderBtn" class="add-reminder-btn">+ Add New Reminder</button>
+        
+        <div id="addReminderForm" class="add-reminder-form">
+            <h2>Create New Reminder</h2>
+            <div class="form-group">
+                <label for="reminderTitle">Title</label>
+                <input type="text" id="reminderTitle" class="form-control" placeholder="e.g. Take Morning Medication">
+            </div>
+            
+            <div class="form-group">
+                <label for="reminderTime">Time</label>
+                <input type="time" id="reminderTime" class="form-control">
+            </div>
+            
+            <div class="form-group">
+                <label for="reminderDuration">Duration (minutes)</label>
+                <input type="number" id="reminderDuration" class="form-control" value="5" min="1" max="60">
+            </div>
+            
+            <div class="form-group">
+                <label>Steps (each step will have equal time)</label>
+                <div id="stepInputs">
+                    <div class="step-input">
+                        <input type="text" class="form-control step-input-field" placeholder="Step instruction">
+                    </div>
+                </div>
+                <button type="button" id="addStepBtn" class="add-step-btn">+ Add Step</button>
+            </div>
+            
+            <div class="action-buttons">
+                <button id="saveReminderBtn" class="btn btn-primary">Save Reminder</button>
+                <button id="cancelReminderBtn" class="btn btn-danger">Cancel</button>
+            </div>
+        </div>
+        
+        <div id="reminderGrid" class="reminder-grid">
+        </div>
+    </div>
+    
+    <div id="notification" class="notification">
+        Reminder started successfully!
+    </div>
+
+
+    
+      <!-- footer  -->
+
+
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-about">
+            <!-- <h3>Arogyasathi</h3> -->
+            <a href="index.html">
+              <img src="/assets/logo copy.png" alt="logo" width="200px">
+            </a>
+  
+            <p>Empowering lives through quality healthcare. We are here for your health — always.</p>
+          </div>
+  
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#services">Services</a></li>
+              <li><a href="/video.html">Videos</a></li>
+              <li><a href="/info.html">Why Arogyasathi</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p>Email: support@arogyasathiXXXX.in</p>
+            <p>Phone: +91-9834732508</p>
+            <p>Address: Mumbai, Maharashtra, India</p>
+          </div>
+        </div>
+  
+        <div class="footer-bottom">
+          <p>&copy; 2025 Arogyasathi. All rights reserved.</p>
+          <p>&hearts; Devloped by SGI Hunters Team </p>
+        </div>
+      </footer>
+  
+  
+    
+    <script src="reminder.js"></script>
+    
+</body>
+</html>    

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="contact.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <div class="left">
+            <a href="index.html">
+              <img src="/assets/logo copy.png" alt="logo" width="80px">
+            </a>
+          </div>
+    
+          <div class="hamburger" onclick="toggleMenu()">
+            &#9776;
+          </div>
+    
+          <div class="center" id="navLinks">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./hospital.html">Hospital</a></li>
+          <li><a href="./scheme.html">Schemes</a></li>
+          <li><a href="./blog.html">Blogs</a></li>
+          <li><a href="./info.html">Info</a></li>
+          <li><a href="./dashboard.html">Dashboard</a></li>
+          <!-- <li><a href="./emergency.html">Emergency  </a></li> -->
+        </ul>
+      </div>
+    
+          <div class="right" id="navButtons">
+          <a href="login.html">  <button>Log In</button></a>
+            <a href="/emergency.html"><button>Emergency Alert</button></a>
+          </div>
+        </nav>
+      </header>
+
+      
+
+<!-- Contact Section -->
+<section class="contact-section">
+    <div class="container">
+      <h2 class="section-title">Contact Us</h2>
+      <p class="section-subtitle">Get in touch with our healthcare team</p>
+      
+      <div class="contact-grid">
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <h3>Send Us a Message</h3>
+          <form id="healthcare-contact">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+            </div>
+            <div class="form-group">
+              <label for="service">Service Needed</label>
+              <select id="service" name="service">
+                <option value="">Select a service</option>
+                <option value="general">General Inquiry</option>
+                <option value="appointment">Book Appointment</option>
+                <option value="emergency">Emergency Care</option>
+                <option value="billing">Billing Inquiry</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+        
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <div class="info-card">
+            <div class="icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="details">
+              <h4>Our Location</h4>
+              <p>123 Medical Center Drive<br>Health City, HC 12345</p>
+            </div>
+          </div>
+          
+          <div class="info-card">
+            <div class="icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="details">
+              <h4>Call Us</h4>
+              <p>Emergency: <a href="tel:+11234567890">(123) 456-7890</a></p>
+              <p>Appointments: <a href="tel:+11234567891">(123) 456-7891</a></p>
+            </div>
+          </div>
+          
+          <div class="info-card">
+            <div class="icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="details">
+              <h4>Email Us</h4>
+              <p><a href="mailto:info@healthcare.com">info@healthcare.com</a></p>
+              <p><a href="mailto:support@healthcare.com">support@healthcare.com</a></p>
+            </div>
+          </div>
+          
+          <div class="info-card">
+            <div class="icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="details">
+              <h4>Working Hours</h4>
+              <p>Monday-Friday: 8:00 AM - 8:00 PM</p>
+              <p>Saturday: 9:00 AM - 5:00 PM</p>
+              <p>Emergency: 24/7</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Map Section -->
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095343008!2d-74.00425872426637!3d40.74076987932881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259bf5c1654f3%3A0xc80f9cfce5383d5d!2sGoogle!5e0!3m2!1sen!2sus!4v1623251234567!5m2!1sen!2sus" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+      
+      <!-- footer  -->
+
+
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-about">
+            <!-- <h3>Arogyasathi</h3> -->
+            <a href="index.html">
+              <img src="/assets/logo copy.png" alt="logo" width="200px">
+            </a>
+  
+            <p>Empowering lives through quality healthcare. We are here for your health — always.</p>
+          </div>
+  
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#services">Services</a></li>
+              <li><a href="/video.html">Videos</a></li>
+              <li><a href="/info.html">Why Arogyasathi</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p>Email: support@arogyasathiXXXX.in</p>
+            <p>Phone: +91-9834732508</p>
+            <p>Address: Mumbai, Maharashtra, India</p>
+          </div>
+        </div>
+  
+        <div class="footer-bottom">
+          <p>&copy; 2025 Arogyasathi. All rights reserved.</p>
+          <p>&hearts; Devloped by SGI Hunters Team </p>
+        </div>
+      </footer>
+  
+      <script src="/contact/src/contact.js"></script>
+</body>
+</html>

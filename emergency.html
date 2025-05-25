@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Health Care Emergency Alert System</title>
+  <link rel="stylesheet" href="emergency.css">
+</head>
+<body>
+
+  
+  <header>
+    <nav class="navbar">
+      <div class="left">
+        <a href="index.html">
+          <img src="/assets/logo copy.png" alt="logo" width="80px">
+        </a>
+      </div>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        &#9776;
+      </div>
+
+          <div class="center" id="navLinks">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./hospital.html">Hospital</a></li>
+          <li><a href="./scheme.html">Schemes</a></li>
+          <li><a href="./blog.html">Blogs</a></li>
+          <li><a href="./info.html">Info</a></li>
+          <li><a href="./dashboard.html">Dashboard</a></li>
+          <!-- <li><a href="./emergency.html">Emergency  </a></li> -->
+        </ul>
+      </div>
+
+      <div class="right" id="navButtons">
+      <a href="login.html">  <button>Log In</button></a>
+        <a href="/emergency.html"><button>Emergency Alert</button></a>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <header>
+    <div class="containerAlert">
+      <h1>Health Care Emergency Alert System</h1>
+    </div>
+</header>
+
+
+<div class="containerE">
+  <div class="alert-info">
+    <p><strong>Alert:</strong> If someone needs urgent medical help, please fill out the form below and share your location to get immediate assistance.</p>
+  </div>
+
+  <button class="location-btn" onclick="getLocation()">📍 Share Current Location</button>
+  <p id="location-output"></p>
+
+  <form action="https://formsubmit.co/aniketgosavi471@gmail.com" method="post" enctype="text/plain">
+    <label for="name">Patient Name:</label>
+    <input type="text" id="name" name="Patient Name" required>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="Age" required>
+
+    <label for="condition">Health Condition:</label>
+    <textarea id="condition" name="Condition" rows="4" required></textarea>
+
+    <label for="contact">Contact Number:</label>
+    <input type="tel" id="contact" name="Contact" required>
+
+    <input type="hidden" id="location" name="Location">
+
+    <button type="submit" class="submit-btn">Send Emergency Alert</button>
+  </form>
+</div>
+
+<!-- calling ambulance -->
+
+<section class="call-ambulance-section">
+  <div class="ambulance-content">
+    <h2>🚨 Emergency Ambulance Help</h2>
+    <p>If you are in an emergency, click the button to call or copy the ambulance helpline number.</p>
+
+    <!-- Call or Copy Button -->
+    <a id="callAmbulanceBtn" href="tel:102" class="call-button">📞 Call Ambulance (102)</a>
+    <button onclick="copyNumber()" class="copy-button">📋 Copy Number</button>
+
+    <p id="copiedText" style="display:none; color: green; margin-top: 10px;">✔ Number copied: 102</p>
+  </div>
+</section>
+
+
+
+      <!-- footer  -->
+
+
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-about">
+            <!-- <h3>Arogyasathi</h3> -->
+            <a href="index.html">
+              <img src="/assets/logo copy.png" alt="logo" width="200px">
+            </a>
+  
+            <p>Empowering lives through quality healthcare. We are here for your health — always.</p>
+          </div>
+  
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#services">Services</a></li>
+              <li><a href="/video.html">Videos</a></li>
+              <li><a href="/info.html">Why Arogyasathi</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p>Email: support@arogyasathiXXXX.in</p>
+            <p>Phone: +91-9834732508</p>
+            <p>Address: Mumbai, Maharashtra, India</p>
+          </div>
+        </div>
+  
+        <div class="footer-bottom">
+          <p>&copy; 2025 Arogyasathi. All rights reserved.</p>
+          <p>&hearts; Devloped by SGI Hunters Team </p>
+        </div>
+      </footer>
+  
+
+<script src="emergency.js"></script>
+
+</body>
+</html>

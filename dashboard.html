@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Fit Health Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="dashboard.css">
+
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="left">
+        <a href="index.html">
+          <img src="/assets/logo copy.png" alt="logo" width="80px">
+        </a>
+      </div>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        &#9776;
+      </div>
+
+    
+          <div class="center" id="navLinks">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./hospital.html">Hospital</a></li>
+          <li><a href="./scheme.html">Schemes</a></li>
+          <li><a href="./blog.html">Blogs</a></li>
+          <li><a href="./info.html">Info</a></li>
+          <li><a href="./dashboard.html">Dashboard</a></li>
+          <!-- <li><a href="./emergency.html">Emergency  </a></li> -->
+        </ul>
+      </div>
+
+      <div class="right" id="navButtons">
+      <a href="login.html">  <button>Log In</button></a>
+        <a href="/emergency.html"><button>Emergency Alert</button></a>
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="container">
+    <header>
+      <h1><i class="fab fa-google"></i> Google Fit Dashboard</h1>
+      <p>View your health and fitness data from Google Fit</p>
+    </header>
+    
+    <div class="dashboard">
+      <!-- Activity Summary -->
+      <div class="card">
+        <div class="card-header">
+          <h2><i class="fas fa-walking"></i> Activity</h2>
+          <span id="activity-date">Today</span>
+        </div>
+        
+        <div class="stat">
+          <div class="stat-value" id="steps">--</div>
+          <div class="stat-label">Steps</div>
+        </div>
+        
+        <div class="progress-container">
+          <div class="progress-bar">
+            <div class="progress-fill" id="steps-progress" style="width: 0%"></div>
+          </div>
+          <div class="progress-labels">
+            <span>0</span>
+            <span id="steps-goal">10,000</span>
+            <span id="steps-percent">0%</span>
+          </div>
+        </div>
+        
+        <div class="data-grid">
+          <div class="stat">
+            <div class="stat-value" id="distance">--</div>
+            <div class="stat-label">Distance (km)</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value" id="calories">--</div>
+            <div class="stat-label">Calories</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Heart Health -->
+      <div class="card">
+        <div class="card-header">
+          <h2><i class="fas fa-heartbeat"></i> Heart</h2>
+          <span id="heart-date">Today</span>
+        </div>
+        
+        <div class="stat">
+          <div class="stat-value" id="heart-rate">--</div>
+          <div class="stat-label">Current BPM</div>
+        </div>
+        
+        <div class="data-grid">
+          <div class="stat">
+            <div class="stat-value" id="resting-hr">--</div>
+            <div class="stat-label">Resting BPM</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value" id="hrv">--</div>
+            <div class="stat-label">HRV (ms)</div>
+          </div>
+        </div>
+        
+        <div id="heart-alerts">
+          <!-- Alerts will appear here -->
+        </div>
+      </div>
+      
+      <!-- Sleep -->
+      <div class="card">
+        <div class="card-header">
+          <h2><i class="fas fa-bed"></i> Sleep</h2>
+          <span id="sleep-date">Last Night</span>
+        </div>
+        
+        <div class="stat">
+          <div class="stat-value" id="sleep-duration">--</div>
+          <div class="stat-label">Hours</div>
+        </div>
+        
+        <div class="progress-container">
+          <div class="progress-bar">
+            <div class="progress-fill" id="sleep-progress" style="width: 0%"></div>
+          </div>
+          <div class="progress-labels">
+            <span>0</span>
+            <span>8 hours</span>
+            <span id="sleep-percent">0%</span>
+          </div>
+        </div>
+        
+        <div id="sleep-stages">
+          <!-- Sleep stages will appear here -->
+        </div>
+      </div>
+    </div>
+    
+    <button id="connect-btn">
+      <i class="fab fa-google"></i> Connect Google Fit
+    </button>
+    
+    <div id="auth-status"></div>
+  </div>
+  
+
+
+      <!-- footer  -->
+
+
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-about">
+            <!-- <h3>Arogyasathi</h3> -->
+            <a href="index.html">
+              <img src="/assets/logo copy.png" alt="logo" width="200px">
+            </a>
+  
+            <p>Empowering lives through quality healthcare. We are here for your health — always.</p>
+          </div>
+  
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#services">Services</a></li>
+              <li><a href="/video.html">Videos</a></li>
+              <li><a href="/info.html">Why Arogyasathi</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p>Email: support@arogyasathiXXXX.in</p>
+            <p>Phone: +91-9834732508</p>
+            <p>Address: Mumbai, Maharashtra, India</p>
+          </div>
+        </div>
+  
+        <div class="footer-bottom">
+          <p>&copy; 2025 Arogyasathi. All rights reserved.</p>
+          <p>&hearts; Devloped by SGI Hunters Team </p>
+        </div>
+      </footer>
+  
+  
+
+
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

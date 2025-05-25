@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotlight Section</title>
+  <link rel="stylesheet" href="info.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+
+
+  <header>
+    <nav class="navbar">
+      <div class="left">
+        <a href="index.html">
+          <img src="/assets/logo copy.png" alt="logo" width="80px">
+        </a>
+      </div>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        &#9776;
+      </div>
+
+    
+          <div class="center" id="navLinks">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./hospital.html">Hospital</a></li>
+          <li><a href="./scheme.html">Schemes</a></li>
+          <li><a href="./blog.html">Blogs</a></li>
+          <li><a href="./info.html">Info</a></li>
+          <li><a href="./dashboard.html">Dashboard</a></li>
+          <!-- <li><a href="./emergency.html">Emergency  </a></li> -->
+        </ul>
+      </div>
+
+      <div class="right" id="navButtons">
+      <a href="login.html">  <button>Log In</button></a>
+        <a href="/emergency.html"><button>Emergency Alert</button></a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="banner-top">
+    <p><strong>Health information you can trust</strong></p>
+    <p>Our clinical information meets NHS England's Information Standard. <strong><a
+          href="https://patient.info/editorial-policy">Read our editorial policy.</a></strong>
+    </p>
+  </section>  
+
+  <main class="container">
+    <h2 class="section-title">Spotlight ...</h2>
+
+    <div class="spotlight-grid">
+
+      <!-- spotlight Card 1 -->
+      <div class="spotlight-card">
+        <a href="https://patient.info/news-and-features/your-essential-skin-cancer-checklist"> <img
+            src="/assets/spot_img1.jpg" alt="Skin Cancer Awareness" /></a>
+        <div class="card-content">
+          <p class="category">Cancer</p>
+          <h3 class="headline"><a
+              href="https://patient.info/news-and-features/your-essential-skin-cancer-checklist">Your essential skin
+              cancer checklist</a></h3>
+          <p class="summary">Following her diagnosis of a malignant melanoma, the Duchess of York has spoken about the
+            importance of checking any new moles that may appear on your body. Skin cancer can kill you, so it's
+            essential to know the signs and get any suspicious skin changes checked out quickly. Here we...</p>
+          <p class="author">by Dr Sarah Jarvis MBE, FRCGP</p>
+        </div>
+      </div>
+
+      <!-- spotlight Card 2 -->
+      <div class="spotlight-card">
+        <a href="https://patient.info/news-and-features/your-guide-to-stroke-prevention"> <img
+            src="/assets/spotimg2.jpg" alt="Stroke Prevention" /></a>
+        <div class="card-content">
+          <p class="category">Brain and nerves</p>
+          <h3 class="headline"><a href="https://patient.info/news-and-features/your-guide-to-stroke-prevention">Your
+              guide to stroke prevention</a></h3>
+          <p class="summary">Every year, around 100,000 people in the UK have a stroke. Whilst there are around 1.3
+            million people in the UK who have survived a...</p>
+          <p class="author">by Lawrence Higgins</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+
+  <!-- Healthcare tools -->
+  <section class="tools-section">
+    <h2 class="tools-title">Healthcare tools, trackers & calculators</h2>
+    <div class="tools-grid">
+
+      <!-- all link tools are https://patient.info/  -->
+
+      <!-- Tool 1 -->
+      <div class="tool-card">
+        <a href="https://patient.info/symptom-checker"><img src="/assets/Symptom checker.jpg"
+            alt="Symptom checker" /></a>
+        <p class="tool-subtitle">Tool</p>
+        <h3 class="tool-name"><a href="https://patient.info/symptom-checker">Symptom checker</a></h3>
+      </div>
+
+      <!-- Tool 2 -->
+      <div class="tool-card">
+        <a href="https://patient.info/doctor/bmi-calculator"> <img src="/assets/BMI calculator.jpg"
+            alt="BMI Calculator" /></a>
+        <p class="tool-subtitle">Calculate your BMI (Body Mass Index)</p>
+        <h3 class="tool-name"><a href="https://patient.info/doctor/bmi-calculator">BMI calculator</a></h3>
+      </div>
+
+      <!-- Tool 3 -->
+      <div class="tool-card">
+        <a href="https://patient.info/doctor/pregnancy-due-date-calculator"> <img
+            src="/assets/Pregnancy due date calculator.jpg" alt="Pregnancy Calculator" /></a>
+        <p class="tool-subtitle">Calculate your pregnancy dates</p>
+        <h3 class="tool-name"><a href="https://patient.info/doctor/pregnancy-due-date-calculator">Pregnancy due date
+            calculator</a></h3>
+      </div>
+
+      <!-- Tool 4 -->
+      <div class="tool-card">
+        <a href="https://patient.info/news-and-features/quiz-am-i-depressed"> <img
+            src="/assets/Am I depressed.webp" alt="Depression Quiz" /></a>
+        <p class="tool-subtitle">Quiz</p>
+        <h3 class="tool-name"><a href="https://patient.info/news-and-features/quiz-am-i-depressed">Am I depressed?</a>
+        </h3>
+      </div>
+
+    </div>
+
+    <div class="view-more-wrapper">
+      <a href="https://patient.info/medical-calculators" class="view-more-btn"> View all tools and calculators</a>
+    </div>
+  </section>
+
+  <!-- letest feature -->
+
+  <section class="latest-features">
+    <h2>Latest features ...</h2>
+    <div class="features-grid">
+      <!-- Feature 1 -->
+      <div class="feature-card">
+        <a href="https://patient.info/news-and-features/can-diet-affect-your-adhd"> <img
+            src="/assets/ADHD and diet.jpg" alt="ADHD and diet"> </a>
+        <p class="category">Mental health</p>
+        <a href="https://patient.info/news-and-features/can-diet-affect-your-adhd">
+          <h3>Can diet affect your ADHD?</h3>
+        </a>
+        <p class="author">by Victoria Raw</p>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="feature-card">
+        <a href="https://patient.info/news-and-features/why-detox-diets-dont-work"> <img
+            src="/assets/Detox myth.jpg" alt="Detox myth"></a>
+        <p class="category">General health and lifestyle</p>
+        <a href="https://patient.info/news-and-features/why-detox-diets-dont-work">
+          <h3>Why you don't need to detox</h3>
+        </a>
+        <p class="author">by Victoria Raw</p>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="feature-card">
+        <a href="https://patient.info/news-and-features/could-keeping-a-journal-help-your-mental-health"> <img
+            src="/assets/Mental journal.jpeg" alt="Mental journal"></a>
+        <p class="category">Mental health</p>
+        <a href="https://patient.info/news-and-features/could-keeping-a-journal-help-your-mental-health">
+          <h3>Could keeping a journal help your mental health?</h3>
+        </a>
+        <p class="author">by Victoria Raw</p>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="feature-card">
+        <a
+          href="https://patient.info/news-and-features/at-home-treatments-for-hayfever-and-when-to-turn-to-medications"><img
+            src="/assets/Hay fever.webp" alt="Hay fever"></a>
+        <p class="category">Allergies, blood & immune system</p>
+        <a
+          href="https://patient.info/news-and-features/at-home-treatments-for-hayfever-and-when-to-turn-to-medications">
+          <h3>How to manage hay fever at home</h3>
+        </a>
+        <p class="author">by Victoria Raw</p>
+      </div>
+    </div>
+
+    <div class="view-more-wrapper">
+      <a href="https://patient.info/news-and-features" class="view-more-btn">View all Latest features</a>
+    </div>
+  </section>
+
+  <!-- Health Topics Section -->
+  <section class="health-topics">
+    <h2>Health topics ...</h2>
+    <p class="subtext">Advice and clinical information on a wide variety of healthcare topics</p>
+
+    <div class="topics-grid">
+      <!-- Topic 1 -->
+      <div class="topic-card">
+        <a href="https://patient.info/allergies-blood-immune"><img src="/assets/Immune System.jpg"
+            alt="Immune System"></a>
+        <a href="https://patient.info/allergies-blood-immune">
+          <p>Allergies, blood & immune system</p>
+        </a>
+      </div>
+
+      <!-- Topic 2 -->
+      <div class="topic-card">
+        <a href="https://patient.info/bones-joints-muscles"> <img src="/assets/Bones and joints.jpg"
+            alt="Bones and joints"></a>
+        <a href="https://patient.info/bones-joints-muscles">
+          <p>Bones, joints and muscles</p>
+        </a>
+      </div>
+
+      <!-- Topic 3 -->
+      <div class="topic-card">
+        <a href="https://patient.info/brain-nerves"><img src="/assets/Brain.jpg" alt="Brain"></a>
+        <a href="https://patient.info/brain-nerves">
+          <p>Brain and nerves</p>
+        </a>
+      </div>
+
+      <!-- Topic 4 -->
+      <div class="topic-card">
+        <a href="https://patient.info/cancer"><img src="/assets/Cancer.jpg" alt="Cancer"></a>
+        <a href="https://patient.info/cancer">
+          <p>Cancer</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="view-more-wrapper">
+      <a href="https://patient.info/health" class="view-more-btn"> View all Health topics</a>
+    </div>
+  </section>
+
+  <!-- Signs and Symptoms Section -->
+
+  <section class="signs-symptoms">
+    <div class="container">
+      <h2>Signs and symptoms ...</h2>
+      <p class="intro">
+        It's often difficult to tell the difference between a <a href="https://patient.info/symptom-checker">symptom</a>
+        and a medical condition - do you just have
+        <a href="https://patient.info/digestive-health/dyspepsia-indigestion">indigestion</a> or is it a <a
+          href="https://patient.info/digestive-health/dyspepsia-indigestion/stomach-ulcer-gastric-ulcer">stomach
+          ulcer</a>? Does your blurred vision have a simple explanation or should you get
+        checked out for <a href="https://patient.info/diabetes/type-2-diabetes">type 2 diabetes</a>? Take a look through
+        the expert information below covering some
+        of the most common medical
+        symptoms, to understand more about the cause of your problem.
+      </p>
+
+      <div class="symptom-cards">
+        <!-- Card 1 -->
+        <div class="symptom-card">
+          <a href="https://patient.info/signs-symptoms/tiredness-fatigue"><img src="/assets/Tiredness.jpg"
+              alt="Tiredness"></a>
+          <p class="category">Signs and symptoms</p>
+          <a href="https://patient.info/signs-symptoms/tiredness-fatigue">
+            <h3>Tiredness</h3>
+          </a>
+          <p class="author">by Dr Rachel Hudson, MRCGP</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="symptom-card">
+          <a href="https://patient.info/signs-symptoms/tiredness-fatigue/muscle-weakness"><img
+              src="/assets/Muscle weakness.jpg" alt="Muscle weakness"></a>
+          <p class="category">Bones, joints and muscles</p>
+          <a href="https://patient.info/signs-symptoms/tiredness-fatigue/muscle-weakness">
+            <h3>Muscle weakness</h3>
+          </a>
+          <p class="author">by Dr Philippa Vincent, MRCGP</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="symptom-card">
+          <a href="https://patient.info/signs-symptoms/left-upper-quadrant-pain-leaflet"> <img
+              src="/assets/Left upper quadrant pain.jpg" alt="Upper quadrant pain"></a>
+          <p class="category">Digestive health</p>
+          <a href="https://patient.info/signs-symptoms/left-upper-quadrant-pain-leaflet">
+            <h3>Left upper quadrant pain</h3>
+          </a>
+          <p class="author">by Dr Caroline Wiggins, MRCGP</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="symptom-card">
+          <a href="https://patient.info/signs-symptoms/lumps-in-the-groin"> <img
+              src="/assets/Lumps in the groin.jpg" alt="Groin lumps"></a>
+          <p class="category">Signs and symptoms</p>
+          <a href="https://patient.info/signs-symptoms/lumps-in-the-groin">
+            <h3>Lumps in the groin</h3>
+          </a>
+          <p class="author">by Dr Colin Tidy, MRCGP</p>
+        </div>
+      </div>
+
+      <div class="related-wrapper">
+        <div class="related-box">
+
+          <h4><i class="fa-solid fa-newspaper fa-flip"></i> Related articles ...</h4>
+          <ul>
+            <li><a href="https://patient.info/signs-symptoms/fever">Fever</a></li>
+            <li><a href="https://patient.info/signs-symptoms/dizziness">Dizziness</a></li>
+            <li><a href="https://patient.info/signs-symptoms/left-lower-quadrant-pain">Left lower quadrant pain</a></li>
+            <li><a href="https://patient.info/signs-symptoms/right-upper-quadrant-pain-leaflet">Right upper quadrant
+                pain</a></li>
+          </ul>
+        </div>
+
+        <div class="related-box">
+          <h4><i class="fa-solid fa-pills fa-flip"></i> Related medicines ...</h4>
+          <ul>
+            <li><a href="https://patient.info/medicine/paracetamol-calpol-disprol-panadol">Paracetamol</a></li>
+            <li><a href="https://patient.info/medicine/etoricoxib-for-pain-and-inflammation-arcoxia">Etoricoxib for pain
+                and inflammation</a></li>
+            <li><a
+                href="https://patient.info/medicine/ibuprofen-for-pain-and-inflammation-brufen-calprofen-nurofen-2">Ibuprofen
+                for pain and inflammation</a></li>
+            <li><a href="https://patient.info/medicine/hyoscine-butylbromide-tablets-buscopan">Hyoscine butylbromide
+                tablets</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- managing-conditions .... -->
+  <section class="managing-conditions">
+    <div class="container">
+      <h2>Managing conditions ...</h2>
+      <p class="description">
+        From ACE inhibitors for high blood pressure, to steroids for eczema, find out what options are available, how
+        they work and the possible side effects.
+      </p>
+
+      <div class="condition-grid">
+        <!-- Row 1 -->
+        <div class="condition-item">
+          <a href="https://patient.info/childrens-health/attention-deficit-hyperactivity-disorder-adhd"> <img
+              src="/assets/ADHD in children.jpg" alt="ADHD in children"></a>
+          <a href="https://patient.info/childrens-health/attention-deficit-hyperactivity-disorder-adhd"> <span>ADHD in
+              children</span></a>
+        </div>
+        <div class="condition-item">
+          <a href="https://patient.info/chest-lungs/asthma-leaflet"> <img src="/assets/Asthma.jpg"
+              alt="Asthma"></a>
+          <a href="https://patient.info/chest-lungs/asthma-leaflet"> <span>Asthma</span></a>
+        </div>
+        <div class="condition-item">
+          <a href="https://patient.info/skin-conditions/viral-rashes/chickenpox-in-children"><img
+              src="/assets/Chickenpox.jpg" alt="Chickenpox"></a>
+          <a href="https://patient.info/skin-conditions/viral-rashes/chickenpox-in-children"><span>Chickenpox</span></a>
+        </div>
+        <div class="condition-item">
+          <a href="https://patient.info/chest-lungs/chronic-obstructive-pulmonary-disease-leaflet"><img
+              src="/assets/COPD.jpg" alt="COPD"></a>
+          <a href="https://patient.info/chest-lungs/chronic-obstructive-pulmonary-disease-leaflet">
+            <span>COPD</span></a>
+        </div>
+        <div class="condition-item">
+          <a href="https://patient.info/diabetes/diabetes-mellitus-leaflet"><img src="/assets/Diabetes.jpg"
+              alt="Diabetes"></a>
+          <a href="https://patient.info/diabetes/diabetes-mellitus-leaflet"><span>Diabetes</span></a>
+        </div>
+        <div class="condition-item">
+          <a href="https://patient.info/skin-conditions/atopic-eczema"><img src="/assets/Eczema.jpg"
+              alt="Eczema"></a>
+          <a href="https://patient.info/skin-conditions/atopic-eczema"> <span>Eczema</span></a>
+        </div>
+        <div class="condition-item">
+          <a href="https://patient.info/womens-health/pelvic-pain-in-women/endometriosis"> <img
+              src="/assets/Endometriosis.jpg" alt="Endometriosis"></a>
+          <a href="https://patient.info/womens-health/pelvic-pain-in-women/endometriosis">
+            <span>Endometriosis</span></a>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="condition-item">
+          <a href="https://patient.info/signs-symptoms/tiredness-fatigue/fibromyalgia"><img
+              src="/assets/Fibromyalgia.jpg" alt="Fibromyalgia"></a>
+          <a href="https://patient.info/signs-symptoms/tiredness-fatigue/fibromyalgia"> <span>Fibromyalgia</span></a>
+        </div>
+        <div class="condition-item">
+          <a href="https://patient.info/skin-conditions/hives-inducible-urticaria"> <img src="/assets/Hives.jpg"
+              alt="Hives"></a>
+          <a href="https://patient.info/skin-conditions/hives-inducible-urticaria"> <span>Hives</span></a>
+        </div>
+        <div class="condition-item">
+          <a href="https://patient.info/infections/wound-infection"> <img src="/assets/Infected wounds.jpg"
+              alt="Infected wounds"></a>
+          <a href="https://patient.info/infections/wound-infection"> <span>Infected wounds</span></a>
+        </div>
+        <div class="condition-item">
+          <a href="https://patient.info/foot-care/heel-and-foot-pain-plantar-fasciitis"><img
+              src="/assets/Plantar fasciitis.jpg" alt="Plantar fasciitis"></a>
+          <a href="https://patient.info/foot-care/heel-and-foot-pain-plantar-fasciitis"> <span>Plantar
+              fasciitis</span></a>
+        </div>
+        <div class="condition-item">
+          <a href="https://patient.info/womens-health/polycystic-ovary-syndrome-leaflet"><img
+              src="/assets/PCOD and PCOS.avif" alt="PCOS"></a>
+          <a href="https://patient.info/womens-health/polycystic-ovary-syndrome-leaflet"> <span>Polycystic ovary
+              syndrome</span></a>
+        </div>
+        <div class="condition-item">
+          <a href="https://patient.info/skin-conditions/psoriasis-leaflet"> <img src="/assets/Psoriasis.jpg"
+              alt="Psoriasis"></a>
+          <a href="https://patient.info/skin-conditions/psoriasis-leaflet"> <span>Psoriasis</span></a>
+        </div>
+        <div class="condition-item">
+          <a href="https://patient.info/skin-conditions/viral-rashes/scarlet-fever"><img
+              src="/assets/Scarlet fever.jpg" alt="Scarlet fever"></a>
+          <a href="https://patient.info/skin-conditions/viral-rashes/scarlet-fever"> <span>Scarlet fever</span></a>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="condition-item">
+          <a href="https://patient.info/infections/strep-a-group-a-strep-gas"> <img src="/assets/Strep A.jpg"
+              alt="Strep A"></a>
+          <a href="https://patient.info/infections/strep-a-group-a-strep-gas"> <span>Strep A</span></a>
+        </div>
+        <div class="condition-item">
+          <a href="https://patient.info/ears-nose-throat-mouth/sore-throat-2/tonsillitis"> <img
+              src="/assets/Tonsillitis.jpg" alt="Tonsillitis"></a>
+          <a href="https://patient.info/ears-nose-throat-mouth/sore-throat-2/tonsillitis"> <span>Tonsillitis</span></a>
+        </div>
+        <div class="condition-item">
+          <a
+            href="https://patient.info/sexual-health/vaginal-discharge-female-discharge/vaginal-thrush-yeast-infection"><img
+              src="/assets/Vaginal thrush.jpg" alt="Vaginal thrush"></a>
+          <a
+            href="https://patient.info/sexual-health/vaginal-discharge-female-discharge/vaginal-thrush-yeast-infection"><span>Vaginal
+              thrush</span></a>
+        </div>
+        <div class="condition-item">
+          <a href="https://patient.info/signs-symptoms/dizziness/vertigo"> <img src="/assets/Vertigo.jpg"
+              alt="Vertigo"></a>
+          <a href="https://patient.info/signs-symptoms/dizziness/vertigo"> <span>Vertigo</span> </a>
+        </div>                    
+      </div>
+
+      <div class="view-all">
+        <a href="https://patient.info/managing-conditions">View all conditions</a>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  
+      <!-- footer  -->
+
+
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-about">
+            <!-- <h3>Arogyasathi</h3> -->
+            <a href="index.html">
+              <img src="/dashboard/assets/logo copy.png" alt="logo" width="200px">
+            </a>
+  
+            <p>Empowering lives through quality healthcare. We are here for your health — always.</p>
+          </div>
+  
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#services">Services</a></li>
+              <li><a href="/video.html">Videos</a></li>
+              <li><a href="/info.html">Why Arogyasathi</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p>Email: support@arogyasathiXXXX.in</p>
+            <p>Phone: +91-9834732508</p>
+            <p>Address: Mumbai, Maharashtra, India</p>
+          </div>
+        </div>
+  
+        <div class="footer-bottom">
+          <p>&copy; 2025 Arogyasathi. All rights reserved.</p>
+          <p>&hearts; Devloped by SGI Hunters Team </p>
+        </div>
+      </footer>
+  
+  
+
+</body>
+
+</html>
