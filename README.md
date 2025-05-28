@@ -3,7 +3,7 @@
 ## 📋 Overview
 Healthcare Project is a web application that allows patients to scan their medical reports (via upload or camera 📸), extract text using OCR technology 📝, detect possible diseases based on the extracted information 🩺, and recommend suitable hospitals accordingly 🏨. This digital solution aims to provide faster and better healthcare services 💡.
 
-![Uploading Screenshot 2025-05-27 202135.png…]()
+
 
 
 ## ✨ Features
